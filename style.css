@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+   background-image: url(images/background.jpg);
+   
+}
+
+#sun {
+    display: flex;
+    justify-content: center;
+}
+
+#sun img {
+    transition-duration: 0.3s;
+    width: 60%;
+    filter: drop-shadow(0px 0px 50px rgba(224, 141, 45, 0.692));
+}
+
+#sun img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.sun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sun h1 {
+    max-width: 45ch;
+    text-align: center;
+}
+
+.planet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.info-left {
+    width: 50ch;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-left: 10vw;
+    text-align: left;
+}
+
+.info-right {
+    width: 50ch;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-right: 10vw;
+    text-align: left;
+}
+
+.planet-img {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.planet-img h1 {
+    font-size: 3rem;
+    margin-top: 48px;
+}
+
+.planet-img img {
+    filter: drop-shadow(0px 0px 50px rgba(85, 85, 85, 0.555));
+    transition: transform .5s ease;
+}
+
+
+.planet-img img:hover {
+    transform: scale(1.1) translateY(-50px);
+    top: 10px;
+    transition-duration: 0.3s;
+}
+
+.planet-img img {
+    width: 60%;
+}
+
+.moon-earth {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.moon-earth>img {
+    width: 15%;
+    position: absolute;
+    transition-duration: 0.3s;
+}
+
+.moon-earth>img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+
+@media (min-width: 2560px) {
+    html {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 3840px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 7680px) {
+    html {
+        font-size: 72px;
+    }
+}
